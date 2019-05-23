@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>居酒屋Gravio</title>
+  <link rel="stylesheet" href="./common.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.1/raphael-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  <script src="./main.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1><img src="./images/logo.png" alt="Gravio"></h1>
+    </header>
+    <main>
+      <div class="boxlist">
+        <div class="box order">
+          <div class="label">オーダー数</div>
+          <div class="card"><span class="number">999</span><span class="unit">杯</span></div>
+        </div>
+        <div class="box serve">
+          <div class="label">提供数</div>
+          <div class="card"><span class="number">999</span><span class="unit">杯</span></div>
+        </div>
+        <div class="box temp">
+          <div class="label">Beer Server 温度</div>
+          <div class="card"><span class="number">-99.9</span><span class="unit">℃</span></div>
+        </div>
+      </div>
+      
+      <div class="boxlist wide">
+          <div class="box">
+            <div class="label">混雑度</div>
+            <div>
+                <div id="gauge" class="800x320px"></div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="label">Beer Server 温度グラフ</div>
+            <div><canvas id="myChart" width="400" height="160"></canvas></div>
+          </div>
+        </div>
+      
+      
+
+      
+      
+    </main>
+    <footer><button id="addButton">データ追加</button></footer>
+  </div>
+</body>
+</html>

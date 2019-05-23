@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff1dc;
+}
+
+#wrapper {
+  min-height: 100vh;
+  position: relative;
+}
+header {
+  background-color: black;
+  height: 80px;
+  box-shadow: 0px 2px rgba(0,0,0,0.3);
+}
+footer {
+  background-color: black;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  text-align: right;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+
+main {
+  padding: 30px;
+}
+
+.boxlist {
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.box {
+  background-color: #facd89;
+  width: 100%;
+  height: 300px;
+  margin-left: 30px;
+  border: solid 2px #c3a06b;
+  border-top-color: #fbd59d;
+  border-left-color: #fbd59d;
+}
+
+.wide .box {
+  height: 460px;
+}
+
+.box:first-child {
+  margin-left: 0;
+}
+
+.box.order {
+  background-image: url('./images/bell.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.box.serve {
+  background-image: url('./images/beer.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.box.temp {
+  background-image: url('./images/thermometer.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.label {
+  background-color: #e69d2f;
+  height: 80px;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 12px;
+  border: 2px solid #b37b25;
+  border-top-color: #eaae52;
+  border-left-color: #eaae52;
+}
+
+.box .card {
+  position: relative;
+  padding-top: 16px;
+}
+.box.temp .card {
+  padding-top: 42px;
+}
+
+.box .number {
+  display: block;
+  width: 100%;
+  padding-right: 160px;
+  text-align: right;
+  font-size: 128px;
+}
+.box.temp .number {
+  font-size: 96px;
+}
+.box .unit {
+  position: absolute;
+  right: 88px;
+  top: 8px;
+  font-size: 48px;
+}
+
+#gauge {
+  margin-top: 30px;
+  zoom: 2;
+}
